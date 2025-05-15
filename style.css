@@ -1,0 +1,285 @@
+/* BELOW CODE PROVIDE BASIC STYLING TO WEBPAGE  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x:hidden;
+}
+h2{
+    font-weight: 600;
+    font-size: 22px;
+}
+h3{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+
+
+
+/* REUSABLE COMPONENTS STYLING */
+:root{
+    --pink : #FF6B82;
+    --gray : rgb(174, 174, 174);
+}
+.btn-a{
+    padding: 0.8rem 1.6rem;
+    border: none;
+    background-color: var(--pink);
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.btn-a:hover{
+    background-color: #f24d66;
+}
+.special-text{
+    padding: 0.2rem 0.4rem;
+    background-color: var(--pink);
+    color: white;
+    font-size: 12px;
+}
+.custom-radio-option{
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--gray);
+    border-radius: 50%;
+    padding: 1.2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+/* MAIN SECTION - OCCUPYING COMPLETE VIEWABLE WIDTH AND HEIGHT */
+main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+}
+
+
+
+
+/* MY BOX - IT CONTAINS ALL THE CONTENT */
+.my-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 500px;
+}
+
+
+
+/* HEADING */
+.heading{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+}
+.horizontal-lines{
+    width: 100%;
+    height: 2px;
+    background-color: gainsboro;
+}
+.my-box .heading h2{
+    width: 100%;
+    color: red;
+}
+
+
+
+
+
+
+/* OPTION - THE CONTAINER THAT ACT AS RADIO OPTION FOR SELECTION */
+.option{
+    width: 100%;
+    padding: 2rem 2rem;
+    border: 1px solid var(--gray);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    overflow: hidden;
+    height: 100px;
+    transition: 0.3s linear;
+    cursor: pointer;
+    position: relative;
+}
+
+/* OPTION-TOP - CONTAIN UPPER PART OF OPTION (RADIO BUTTON , HEADING , PRICING) */
+.option-top{
+    display: flex;
+    justify-content: space-between;
+}
+.option-top-left{
+    display: flex;
+    gap: 1rem;
+}
+.option-top-left h3{
+    font-size: 20px;
+}
+.option-top-left-content-box-top{
+    display: flex;
+    gap: 1rem;
+}
+.option-top-left-content-box-bottom{
+    height: 20px;
+}
+.option-top-right p{
+    font-size: 12px;
+    color: var(--gray);
+}
+
+
+
+
+
+
+/* OPTION-BOTTOM - CONTAIN BOTTOM PART OF OPTION (SELECT OPTION TO SELCT SIZE AND COLOR) */
+.option-bottom{
+    width: 250px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    flex: 3;
+}
+.option-bottom-row{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.option-bottom-row p{
+    font-size: 12px;
+    width: 15px;
+}
+#optionBottomRow1{
+    margin-left: 30px;
+}
+#optionBottomRow1 p:nth-child(1) , #optionBottomRow1 p:nth-child(2){
+    width: 80px;
+    font-size: 16px;
+}
+select{
+    width: 80px;
+    padding: 0.5rem;
+}
+
+
+
+
+
+/* TOTAL-BOX - CONTAIN THE CONTENT (FREE DELIVERY AND TOTAL PRICE) */
+.total-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.total-box p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.total-box p:nth-child(1){
+    color: var(--pink);
+}
+
+
+
+/* BUTTON-BOX - CONTAIN "ADD TO CART" BUTTON AS WELL AS BOTTOM ITALIC TEXT */
+.button-box{
+    width: 100%;
+}
+.button-box .btn-a{
+    width: 100%;
+}
+.button-box p{
+    margin-top: 0.4rem;
+    text-align: right;
+    color: var(--gray);
+    font-style: italic;
+}
+
+
+
+
+
+/* IN THIRD OPTION - SPECIAL TEXT (30% Off) IS SLIGHTLY ABOVE THAN OTHERS */
+#option3 .special-text{
+    transform: translateY(-15px);
+}
+
+/* IN SECOND OPTION - THERE IS SPECIAL TEXT (MOST POPULAR) IN THE TOP-RIGHT CORNER */
+.most-popular{
+    position: absolute;
+    top: -3%;
+    right: 0%;
+    padding: 0.5rem 1.2rem;
+    background-color: var(--pink);
+    color: white;
+    font-size: 12px;
+    border-bottom-left-radius: 6px;
+}
+
+
+
+
+
+/* ACTIVE - THIS CLASS WILL BE ACTIVATED FOR THE OPTION THAT IS SELECTED */
+.active{
+    height: 250px;
+    border: 4px solid var(--pink);
+    background-color: #FFF9FA;
+}
+.active .inner-circle{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background-color: var(--pink);
+}
+
+
+
+
+
+/* RESPONSIVENESS TO PROVIDE FRIENDLY UI FOR SMALL SCREENS AS WELL */
+@media screen and (max-width:550px) {
+    h2{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:450px) {
+   html{
+    font-size: 80%;
+   }
+   .option{
+    height: 85px;
+   }
+   .active{
+    height: 250px;
+   }
+   h2{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    html{
+        font-size: 65%;
+    }
+}

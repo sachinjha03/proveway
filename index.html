@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOGO</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+
+      <div class="my-box">
+
+        <!-- HEADING -->
+        <div class="heading">
+            <div class="horizontal-lines"></div>
+            <h2>YAY! It's Bogo</h2>
+            <div class="horizontal-lines"></div>
+        </div>
+
+        <!-- OPTION 1 -->
+        <div class="option" id="option1" onclick="selectOption(1)">
+          <div class="option-top">
+            <div class="option-top-left">
+              <div class="custom-radio-option outer-circle">
+                <div class="inner-circle"></div>
+              </div>
+              <div class="option-top-left-content-box">
+                <div class="option-top-left-content-box-top">
+                  <h3>1 Unit</h3>
+                  <p class="special-text">10% Off</p>
+                </div>
+                <div class="option-top-left-content-box-bottom">
+                  <p>Standard Price</p>
+                </div>
+              </div>
+            </div>
+            <div class="option-top-right">
+              <h3>$10.00 USD</h3>
+              <p><strike>$24.00 USD</strike></p>
+            </div>
+          </div>
+          <div class="option-bottom">
+            <div class="option-bottom-row" id="optionBottomRow1">
+              <p>Size</p>
+              <p>Color</p>
+            </div>
+            <div class="option-bottom-row" id="optionBottomRow2">
+              <p>#1</p>
+              <select name="size">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+              <select name="color">
+                <option value="" hidden>Color</option>
+                <option value="Red">Red</option>
+                <option value="Green">Green</option>
+                <option value="Blue">Blue</option>
+              </select>
+            </div>
+            <div class="option-bottom-row" id="optionBottomRow3">
+              <p>#2</p>
+              <select name="size">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+              <select name="color">
+                <option value="" hidden>Color</option>
+                <option value="Red">Red</option>
+                <option value="Green">Green</option>
+                <option value="Blue">Blue</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- OPTION 2 -->
+        <div class="option" id="option2" onclick="selectOption(2)">
+            <p class="most-popular">Most Popular</p>
+          <div class="option-top">
+            <div class="option-top-left">
+              <div class="custom-radio-option outer-circle">
+                <div class="inner-circle"></div>
+              </div>
+              <div class="option-top-left-content-box">
+                <div class="option-top-left-content-box-top">
+                  <h3>2 Unit</h3>
+                  <p class="special-text">20% Off</p>
+                </div>
+                <div class="option-top-left-content-box-bottom">
+                 
+                </div>
+              </div>
+            </div>
+            <div class="option-top-right">
+              <h3>$18.00 USD</h3>
+              <p><strike>$24.00 USD</strike></p>
+            </div>
+          </div>
+          <div class="option-bottom">
+            <div class="option-bottom-row" id="optionBottomRow1">
+              <p>Size</p>
+              <p>Color</p>
+            </div>
+            <div class="option-bottom-row" id="optionBottomRow2">
+              <p>#1</p>
+              <select name="size">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+              <select name="color">
+                <option value="" hidden>Color</option>
+                <option value="Red">Red</option>
+                <option value="Green">Green</option>
+                <option value="Blue">Blue</option>
+              </select>
+            </div>
+            <div class="option-bottom-row" id="optionBottomRow3">
+              <p>#2</p>
+              <select name="size">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+              <select name="color">
+                <option value="" hidden>Color</option>
+                <option value="Red">Red</option>
+                <option value="Green">Green</option>
+                <option value="Blue">Blue</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- OPTION 3 -->
+         <div class="option" id="option3" onclick="selectOption(3)">
+          <div class="option-top">
+            <div class="option-top-left">
+              <div class="custom-radio-option outer-circle">
+                <div class="inner-circle"></div>
+              </div>
+              <div class="option-top-left-content-box">
+                <div class="option-top-left-content-box-top">
+                  <h3>3 Unit</h3>
+                  <div class="special-text">30% Off</div>
+                </div>
+                <div class="option-top-left-content-box-bottom"></div>
+              </div>
+            </div>
+            <div class="option-top-right">
+              <h3>$24.00 USD</h3>
+              <p><strike>$24.00 USD</strike></p>
+            </div>
+          </div>
+          <div class="option-bottom">
+            <div class="option-bottom-row" id="optionBottomRow1">
+              <p>Size</p>
+              <p>Color</p>
+            </div>
+            <div class="option-bottom-row" id="optionBottomRow2">
+              <p>#1</p>
+              <select name="size">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+              <select name="color">
+                <option value="" hidden>Color</option>
+                <option value="Red">Red</option>
+                <option value="Green">Green</option>
+                <option value="Blue">Blue</option>
+              </select>
+            </div>
+            <div class="option-bottom-row" id="optionBottomRow3">
+              <p>#2</p>
+              <select name="size">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+              <select name="color">
+                <option value="" hidden>Color</option>
+                <option value="Red">Red</option>
+                <option value="Green">Green</option>
+                <option value="Blue">Blue</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- TOTAL BOX -->
+        <div class="total-box">
+            <p>FREE Delivery</p>
+            <p>Total : $ <span id="totalPrice">00.00</span> USD</p>
+        </div>
+
+        <!-- BUTTON BOX -->
+        <div class="button-box">
+            <button class="btn-a"><span>+</span> Add To Cart</button>
+            <p>@ Powered By Pumper</p>
+        </div>
+
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
